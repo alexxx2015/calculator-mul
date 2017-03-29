@@ -64,14 +64,14 @@
 					<scanIntervalSeconds>2</scanIntervalSeconds>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
 					<archiveClasses>true</archiveClasses>
 					<webResources>
-						<!-- in order to interpolate version from pom into appengine-web.xml -->
+						< ! - - in order to interpolate version from pom into appengine-web.xml - - >
 						<resource>
 							<directory>${basedir}/src/main/webapp/WEB-INF</directory>
 							<filtering>true</filtering>
@@ -80,6 +80,7 @@
 					</webResources>
 				</configuration>
 			</plugin>
+			-->
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
